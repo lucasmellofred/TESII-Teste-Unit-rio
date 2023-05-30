@@ -18,7 +18,6 @@ public class PositivoEhMedia {
             String entrada = leitor.nextLine();
 
             if (entrada.equalsIgnoreCase("PARAR")) {
-                // Se a entrada for "PARAR", interrompe a leitura e retorna o array atual
                 return numeros;
             }
 
@@ -27,7 +26,7 @@ public class PositivoEhMedia {
                 numeros[i] = numero;
             } catch (NumberFormatException e) {
                 System.out.println("Entrada inválida. Por favor, digite um número inteiro.");
-                i--; // Decrementa o contador para solicitar novamente o número válido
+                i--;
             }
         }
 
