@@ -6,14 +6,14 @@ public class PositivoEhMediaTest {
     public void testContarPositivos() {
         int[] numeros = { 1, -2, 3, -4, 5 };
         int countPositivos = PositivoEhMedia.contarPositivos(numeros);
-        Assertions.assertEquals(3, countPositivos, "A quantidade de números positivos está incorreta.");
+        Assertions.assertEquals(3, countPositivos);
     }
 
     @Test
     public void testContarNegativos() {
         int[] numeros = { 1, -2, 3, -4, 5 };
         int countNegativos = PositivoEhMedia.contarNegativos(numeros);
-        Assertions.assertEquals(2, countNegativos, "A quantidade de números negativos está incorreta.");
+        Assertions.assertEquals(2, countNegativos);
     }
 
     @Test
